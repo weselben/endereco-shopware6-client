@@ -711,5 +711,22 @@
                 Namen müssen mit "," getrennt eingeben werden.
             </helpText>
         </input-field>
+
+        <input-field type="int">
+            <name>enderecoAddressCheckTTL</name>
+            <label>Address check TTL in minutes</label>
+            <label lang="de-DE">Adressprüfung TTL in Minuten</label>
+            <defaultValue>30</defaultValue>
+            <placeholder>30</placeholder>
+            <helpText>
+                The time-to-live (TTL) in minutes for recently created addresses. Addresses created within this time 
+                period will be considered recent and may skip certain validation checks. Default is 30 minutes.
+            </helpText>
+            <helpText lang="de-DE">
+                Die Time-to-Live (TTL) in Minuten für kürzlich erstellte Adressen. Adressen, die innerhalb dieses 
+                Zeitraums erstellt wurden, gelten als aktuell und können bestimmte Validierungsprüfungen überspringen. 
+                Standard ist 30 Minuten.
+            </helpText>
+        </input-field>
     </card>
 </config>

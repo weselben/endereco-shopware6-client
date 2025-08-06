@@ -155,7 +155,7 @@ final class AmsStatusIsSetInsurance implements IntegrityInsurance
         $existingCustomerCheckIsRelevant =
             $this->enderecoService->isExistingAddressCheckFeatureEnabled($salesChannelId)
             && !$this->enderecoService->isAddressFromRemote($addressEntity)
-            && !$this->enderecoService->isAddressRecent($addressEntity)
+            && !$this->enderecoService->isAddressRecent($addressEntity, $salesChannelId)
             && $this->processContext->isStorefront();
 
         $paypalExpressCheckoutCheckIsRelevant =
